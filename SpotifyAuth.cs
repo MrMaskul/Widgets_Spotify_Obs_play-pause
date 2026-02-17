@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 public class SpotifyAuth
 {
-    private readonly string clientId = "075d377363074fd09b9f2f27091ff887";
-    private readonly string clientSecret = "722b12049a22497e999c160e55c73914";
+    private readonly string clientId = "client_id";
+    private readonly string clientSecret = "client_secret";
     private readonly string refreshToken = "AQCRd560qxCWJbQTTrCzNyB4Oh-7an1C_QuuxLwLuvHUbE6FdVIYtkZszSdCjz3XmMBeJPx3RZ5668od_CGKXhK3PvrDvh_TW2Fl5e8pAyXFYLkWnvEvPN0fJ4rwQNZ80S0";
 
     private string accessToken;
@@ -79,4 +79,5 @@ public class SpotifyAuth
     /// Convenience: prefetch token on launch. Safe to call multiple times.
     /// </summary>
     public Task InitializeAsync() => GetAccessTokenAsync();
+
 }
